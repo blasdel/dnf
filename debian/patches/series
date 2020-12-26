@@ -1,0 +1,7 @@
+0001-docs-define-SPHINX_BUILD_NAME-with-sphinx-python-pat.patch
+0002-Add-a-testing-configuration-for-the-test-suite.patch
+0003-Substitute-variables-in-testing-configuration-file.patch
+0004-Create-persistdir-for-testing-suite.patch
+0005-Use-custom-testing-dnf-configuaration-file-for-some-.patch
+0006-Provide-custom-bash-completion-directory-fallback.patch
+0008-tests-ensure-default-LANG-to-C-and-LANGUAGE-to-en_US.patch
