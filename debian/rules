@@ -22,7 +22,7 @@ override_dh_auto_install:
 	# We don't need systemd integration.
 	rm -rfv 'debian/tmp/usr/lib/systemd/'
 	# Remove yum compat files that are already provided by the "old" yum package in Debian.
-	# This mostly corresponds to yum_compat_level == preview in dnf.spec. 
+	# This mostly corresponds to yum_compat_level == preview in dnf.spec.
 	rm -fv 'debian/tmp/usr/share/man/man1/yum-aliases.1'
 	rm -fv 'debian/tmp/usr/share/man/man5/yum.conf.5'
 	rm -fv 'debian/tmp/usr/share/man/man8/yum.8'
@@ -66,4 +66,3 @@ override_dh_install:
 
 get-orig-source:
 	uscan --noconf --force-download --rename --download-current-version --destdir=..
-
