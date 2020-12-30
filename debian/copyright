@@ -701,10 +701,6 @@ Copyright: 2005, Duke University
   2007, Red Hat, Inc
 License: GPL-2+
 
-Files: COPYING
-Copyright: 1989, 1991, Free Software Foundation, Inc.
-License: GPL-2+
-
 Files: tests/mock.py
 Copyright: 2007-2012, Michael Foord & the mock team <fuzzyman AT voidspace DOT org DOT uk>
 License: BSD-3-clause
