@@ -63,6 +63,3 @@ override_dh_install:
 	else \
 		dh_install --fail-missing ; \
 	fi
-
-get-orig-source:
-	uscan --noconf --force-download --rename --download-current-version --destdir=..

@@ -3,6 +3,7 @@ dnf (4.5.2-2) unstable; urgency=medium
   * Trim trailing whitespace.
   * Set upstream metadata fields: Repository, Repository-Browse.
   * Remove listed license files (COPYING) from copyright.
+  * Remove unnecessary get-orig-source-target.
 
  -- Frédéric Pierret <frederic.pierret@qubes-os.org>  Wed, 30 Dec 2020 09:36:12 -0000
 
