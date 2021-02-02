@@ -15,9 +15,6 @@ dnf (4.5.2-2) unstable; urgency=medium
 
 dnf (4.5.2-1) unstable; urgency=medium
 
-  * Initial commit
-
-    See: https://github.com/QubesOS/qubes-issues/issues/5940
-    Closes: #978627
+  * Initial upload, Closes: #978627.
 
  -- Frédéric Pierret <frederic.pierret@qubes-os.org>  Sat, 26 Dec 2020 10:00:00 +0100

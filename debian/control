@@ -3,7 +3,7 @@ Section: admin
 Priority: optional
 Maintainer: Mihai Moldovan <ionic@ionic.de>
 Uploaders: Frédéric Pierret <frederic.pierret@qubes-os.org>
-Build-Depends: debhelper (>= 10~),
+Build-Depends: debhelper-compat (= 11),
  dh-python,
  python3,
  bash-completion,
@@ -19,7 +19,7 @@ Build-Depends: debhelper (>= 10~),
  python3-nose,
  python3-gpg,
  libmodulemd2 (>= 2.9.4-1~),
-Standards-Version: 4.4.0.1
+Standards-Version: 4.5.1
 Homepage: https://github.com/rpm-software-management/dnf
 Vcs-Browser: https://salsa.debian.org/fepitre/dnf
 Vcs-Git: https://salsa.debian.org/fepitre/dnf.git
