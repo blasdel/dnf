@@ -1,3 +1,9 @@
+dnf (4.5.2-3) unstable; urgency=medium
+
+  * debian/copyright: Update and specify copyright holders
+
+ -- Frédéric Pierret <frederic.pierret@qubes-os.org>  Tue, 02 Feb 2021 14:14:23 +0100
+
 dnf (4.5.2-2) unstable; urgency=medium
 
   * Trim trailing whitespace.
