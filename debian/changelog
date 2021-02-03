@@ -1,3 +1,12 @@
+dnf (4.5.2-4) unstable; urgency=medium
+
+  * Team upload.
+  * Source upload for testing migration.
+  * Drop nextgen-yum4 depends on deltarpm as it is optional and already
+    recommended by python3-dnf.
+
+ -- Holger Levsen <holger@debian.org>  Wed, 03 Feb 2021 15:49:57 +0100
+
 dnf (4.5.2-3) unstable; urgency=medium
 
   * debian/copyright: Update and specify copyright holders

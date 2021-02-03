@@ -73,7 +73,6 @@ Architecture: all
 Multi-Arch: foreign
 Depends: ${misc:Depends},
  dnf (= ${binary:Version}),
- deltarpm,
 Breaks: yum4 (<< 4.2.23-1~)
 Replaces: yum4 (<< 4.2.23-1~)
 Provides: yum4 (= 4.2.23-1~)
