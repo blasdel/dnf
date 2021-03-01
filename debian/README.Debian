@@ -6,9 +6,9 @@ create a completely working one lest beginners shoot themselves in the foot.
 You should:
 	- mkdir /var/lib/rpm
 	- rpm --initdb
-prior to using yum.
+prior to using dnf.
 
-Be aware that the only usage of yum in Debian is to perform chroot (Xen, UML)
+Be aware that the only usage of dnf in Debian is to perform chroot (Xen, UML)
 of Fedora, RHEL, CentOS, etc. installs. We, at GPLHost, use a specific
 bootstrap script for doing this with CentOS. Such script is shipped with
 DTC-Xen (also in Debian). Another common pattern is using mock for package
