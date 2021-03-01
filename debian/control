@@ -38,7 +38,7 @@ Depends: ${misc:Depends}, ${python3:Depends},
 Breaks: dnf-plugins-core (<< 4.0.6-1~)
 Description: Dandified Yum package manager
  Package manager forked from Yum, using libsolv as a dependency resolver.
- Dnf requires a working rpm installation and is ment to be used in chroots,
+ Dnf requires a working rpm installation and is meant to be used in chroots,
  see README.Debian for more information.
  .
  This package provides the dnf program.
