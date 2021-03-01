@@ -3,9 +3,10 @@ dnf (4.5.2-6) UNRELEASED; urgency=medium
   * Team upload.
   * d/control:
     - improve long description. Closes: #981724.
+    - bump debhelper-compat to 13, no changes observed.
     - add Rules-Requires-Root: no.
   * README.Debian: improve wording, replace yum with dnf where appropriate.
-  * Fix typo in debian/patches/0008.patch, thanks lintian.
+  * Fix typo in debian/patches/0008.patch, thanks lintian. 
 
  -- Holger Levsen <holger@debian.org>  Mon, 01 Mar 2021 16:19:30 +0100
 
