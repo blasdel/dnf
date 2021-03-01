@@ -7,7 +7,7 @@ Subject: [PATCH] tests: ensure default LANG to C and LANGUAGE to en_US
 It corresponds to expected values in tests with LC_ALL=C and the
 language used while asserting equal english sentences with the
 returned ones from system. It has been observed that manipulating
-locales in Debian environement, LC_ALL=C is not sufficient.
+locales in Debian environment, LC_ALL=C is not sufficient.
 ---
  tests/__init__.py | 2 ++
  1 file changed, 2 insertions(+)
