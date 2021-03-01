@@ -20,6 +20,7 @@ Build-Depends: debhelper-compat (= 12),
  python3-gpg,
  libmodulemd2 (>= 2.9.4-1~),
 Standards-Version: 4.5.1
+Rules-Requires-Root: no
 Homepage: https://github.com/rpm-software-management/dnf
 Vcs-Browser: https://salsa.debian.org/fepitre/dnf
 Vcs-Git: https://salsa.debian.org/fepitre/dnf.git
