@@ -16,8 +16,7 @@ builds, which implicitly creates and uses chroots.
 
 This package was not, is not, and will never be, a replacement for apt-get when
 using Debian or any other .deb based distribution. So please, do NOT ask about
-it, or do not send any bug entry for this, or you'll get flamed for not reading
-the README.Debian as anyone should.
+it, or do not send any bug entry for this.
 
  -- Thomas Goirand <thomas@goirand.fr>  Sat, 26 Dec 2009 13:05:37 +0800
  -- Mihai Moldovan <ionic@ionic.de>  Tue, 30 Jan 2018 12:15:41 +0100

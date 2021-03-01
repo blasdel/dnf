@@ -1,3 +1,10 @@
+dnf (4.5.2-6) UNRELEASED; urgency=medium
+
+  * Team upload.
+  * README.Debian: improve wording.
+
+ -- Holger Levsen <holger@debian.org>  Mon, 01 Mar 2021 16:19:30 +0100
+
 dnf (4.5.2-5) unstable; urgency=medium
 
   [ Frédéric Pierret ]
