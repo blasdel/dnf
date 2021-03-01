@@ -1,6 +1,7 @@
 dnf (4.5.2-6) UNRELEASED; urgency=medium
 
   * Team upload.
+  * Improve long description. Closes: #981724.
   * README.Debian: improve wording, replace yum with dnf where appropriate.
 
  -- Holger Levsen <holger@debian.org>  Mon, 01 Mar 2021 16:19:30 +0100
