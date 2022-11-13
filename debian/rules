@@ -21,12 +21,7 @@ override_dh_auto_install:
 	dh_auto_install --builddirectory=build
 	# We don't need systemd integration.
 	rm -rfv 'debian/tmp/usr/lib/systemd/'
-	# Remove yum compat files that are already provided by the "old" yum package in Debian.
-	# This mostly corresponds to yum_compat_level == preview in dnf.spec.
-	rm -fv 'debian/tmp/usr/share/man/man1/yum-aliases.1'
-	rm -fv 'debian/tmp/usr/share/man/man5/yum.conf.5'
-	rm -fv 'debian/tmp/usr/share/man/man8/yum.8'
-	rm -fv 'debian/tmp/usr/share/man/man8/yum-shell.8'
+
 	# Remove automatic features.
 	rm -fv 'debian/tmp/usr/bin/dnf-automatic-3'
 	rm -fv 'debian/tmp/usr/share/man/man8/dnf-automatic.8'

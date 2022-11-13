@@ -62,29 +62,6 @@ Description: Documentation for the DNF package manager (common documentation)
  .
  This package installs common documentation for the dnf program.
 
-Package: yum4
-Depends: ${misc:Depends},
- nextgen-yum4,
-Architecture: all
-Priority: optional
-Section: oldlibs
-Description: transitional package
- This is a transitional package. It can safely be removed.
-
-Package: nextgen-yum4
-Architecture: all
-Multi-Arch: foreign
-Depends: ${misc:Depends},
- dnf (= ${binary:Version}),
-Breaks: yum4 (<< 4.2.23-1~)
-Replaces: yum4 (<< 4.2.23-1~)
-Provides: yum4 (= 4.2.23-1~)
-Description: DNF (Dandified Yum) Yum CLI compatibility layer
- Package manager forked from Yum, using libsolv as a dependency resolver.
- .
- This package installs a Yum CLI compatibility layer redirecting
- /usr/bin/yum4 to DNF.
-
 Package: python3-dnf
 Architecture: all
 Multi-Arch: foreign
