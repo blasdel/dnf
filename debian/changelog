@@ -1,3 +1,11 @@
+dnf (4.14.0-1) unstable; urgency=medium
+
+  * Update to dnf-4.14.0.
+  * Remove yum4.
+  * Update debian/watch.
+
+ -- Frédéric Pierret <frederic.pierret@qubes-os.org>  Sun, 13 Nov 2022 09:39:06 +0100
+
 dnf (4.5.2-6) unstable; urgency=medium
 
   * Team upload.

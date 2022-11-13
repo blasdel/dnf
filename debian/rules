@@ -11,14 +11,16 @@ include /usr/share/dpkg/default.mk
 	dh "${@}" --buildsystem=cmake --with=python3
 
 override_dh_auto_configure:
-	dh_auto_configure --builddirectory=build -- -DPYTHON_DESIRED:STRING=3 -DWITH_MAN:BOOL=ON \
-	                                            -DBASH_COMPLETION_FALLBACKDIR:PATH=/usr/share/bash-completion/completions
+	dh_auto_configure --builddirectory=build -- \
+		-DWITH_MAN:BOOL=ON \
+	    -DBASH_COMPLETION_FALLBACKDIR:PATH=/usr/share/bash-completion/completions
 
 override_dh_auto_build:
 	dh_auto_build --builddirectory=build -- all doc-man doc-html
 
 override_dh_auto_install:
 	dh_auto_install --builddirectory=build
+
 	# We don't need systemd integration.
 	rm -rfv 'debian/tmp/usr/lib/systemd/'
 
@@ -32,6 +34,7 @@ override_dh_auto_install:
 	# Remove automatic features.
 	rm -fv 'debian/tmp/usr/bin/dnf-automatic-3'
 	rm -fv 'debian/tmp/usr/share/man/man8/dnf-automatic.8'
+
 	# Use system-provides files.
 	rm -fv 'build/doc/_static/jquery.js' \
 	       'build/doc/_static/underscore.js' \
@@ -39,6 +42,7 @@ override_dh_auto_install:
 	       'build/doc/_static/doctools.js' \
 	       'build/doc/_static/language_data.js' \
 	       'build/doc/_static/searchtools.js'
+
 	# Re-root HTML documentation to an "html" subdir.
 	mkdir -p 'build/doc/html'
 	mv 'build/doc/'*.html 'build/doc/html/'
@@ -58,10 +62,3 @@ override_dh_auto_test:
 
 override_dh_missing:
 	dh_missing --fail-missing
-
-override_dh_install:
-	if dpkg --compare-versions "$$(dpkg-query -f='$${Version}' --show 'debhelper')" 'ge' '12'; then \
-		dh_install; \
-	else \
-		dh_install --fail-missing ; \
-	fi
